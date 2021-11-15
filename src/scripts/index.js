@@ -7,17 +7,18 @@ import moment from "moment";
 // \/ All of your javascript should go here \/
 
 const button=document.querySelector('#button');
-const day = moment().format('Do'); 
-const hours=moment().format('h');
-const minut= moment().format('mm');
+const day = moment().endOf('month').fromNow(); 
+const hours=moment().endOf('day').fromNow();
+const minute= moment().format('mm');
 const second=moment().format('ss');
 
 button.addEventListener('click', e=>
-{
-    document.querySelector('#days').innerHTML = `${day} days`;
-    document.querySelector('#hours').innerHTML =`${hours} hours`;
-    document.querySelector('#minuts').innerHTML =`${minut} minuts`;  
-    document.querySelector('#seconds').innerHTML =`${second} seconds`; 
+{   
+    document.querySelector('#days').innerHTML = `${ day } `;
+    document.querySelector('#hours').innerHTML =`${ hours }`;
+    document.querySelector('#minuts').innerHTML =`${ 60 - minute } minutes`;  
+    document.querySelector('#seconds').innerHTML =`${ 60 - second } seconds`;
+
 
 })
 

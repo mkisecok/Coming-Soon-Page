@@ -30,6 +30,7 @@ body * {
      flex-direction: column;
      justify-content: center;
      padding-left: 10vw;
+     
      p{
        opacity: 0.6;
      }
@@ -41,7 +42,9 @@ body * {
        border-color:cadetblue ;
        
       &:hover{
-        padding:12px 12px ;
+        color:white;
+        background-color: cadetblue;
+        cursor: pointer;
       }
      
      }
@@ -52,12 +55,13 @@ body * {
        height:30%;
        top: 10px;
       
-     i{
+     a{
        display: block;
        margin: 10px;
+       color: black;
        
       &:hover{
-        
+        font-size: large;
       }
      } 
      
