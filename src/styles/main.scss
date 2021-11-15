@@ -10,7 +10,6 @@ body * {
   justify-content: space-between;
   flex-direction: column-reverse;
 
-
   @media(min-width:480px) {
     flex-direction: row;
   }
@@ -26,10 +25,16 @@ body * {
      flex-direction: column;
      justify-content: center;
      
+     font-weight: 800;
      font-size: 32px;
      @media(min-width:480px) {
-      
+       
+      background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('../images/nathan-dumlao-5Hl5reICevY-unsplash.jpg');
+      background-size:cover;
+      background-repeat: no-repeat;
+      align-items: flex-start;
       width: 50%;
+      color: rgb(128, 20, 12);
     }
      
    }
@@ -39,7 +44,8 @@ body * {
      display: flex;
      flex-direction: column;
      justify-content: center;
-     padding-left: 10vw;
+     margin-left: 10vw;
+     padding:2vw ;
      
      p{
        opacity: 0.6;
@@ -50,22 +56,23 @@ body * {
        border-radius: 20px;
        box-shadow: 5px 5px lightgrey;
        &:hover{ 
-        color:white;
+        
         cursor: pointer;
         background-color: cadetblue;
         }
 
        a{
-      color: black;
-      text-decoration: none;
-      }
+        color: black;
+        text-decoration: none;
+        &:hover{
+        color:white;
+      }}
        border-color:cadetblue ;
        
-      
      }
      #ikons{
        display: flex;
-       justify-content: center;
+       justify-content: flex-start;
        align-items: flex-end;
        height:30%;
        top: 10px;
@@ -79,21 +86,15 @@ body * {
         font-size: large;
       }
      } 
-     
     }
     @media(min-width:480px) {
-      
+
       width: 50%;
-      #ikons{
-        justify-content: flex-start;
-      }
+
       button{
         width: 15vw;
       }
-
     }
-   
-   
  }
 }
 }

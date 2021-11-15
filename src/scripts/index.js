@@ -19,6 +19,5 @@ button.addEventListener('click', e=>
     document.querySelector('#minuts').innerHTML =`${ 60 - minute } minutes`;  
     document.querySelector('#seconds').innerHTML =`${ 60 - second } seconds`;
    
-    //
 })
 
