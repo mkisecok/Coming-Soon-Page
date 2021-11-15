@@ -3,5 +3,68 @@
 body,
 body * {
   box-sizing: border-box;
- 
+  font-family: 'Courier New', Courier, monospace;
+ .container{
+   display: flex;
+   justify-content: space-between;
+	align-items: stretch;
+   
+   #left-container{
+     width: 50%;
+     height: 100vh;
+     padding-left: 10vw;
+     background-image:url('../images/pexels-ann-nekr-5799379.jpg') ;
+     background-repeat: no-repeat;
+     background-size:cover;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     
+     font-size: 32px;
+     
+   }
+   #right-container{
+     width: 50%;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding-left: 10vw;
+     p{
+       opacity: 0.6;
+     }
+     button{
+       width: 15vw;
+       padding: 10px;
+       border-radius: 20px;
+       box-shadow: 5px 5px lightgrey;
+       border-color:cadetblue ;
+       
+      &:hover{
+        padding:12px 12px ;
+      }
+     
+     }
+     #ikons{
+       display: flex;
+       justify-content: start;
+       align-items: flex-end;
+       height:30%;
+       top: 10px;
+      
+     i{
+       display: block;
+       margin: 10px;
+       
+      &:hover{
+        
+      }
+     } 
+     
+    }
+
+   }
+   
+ }
 }
+
