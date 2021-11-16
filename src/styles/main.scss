@@ -26,6 +26,8 @@ body * {
      justify-content: center;
      font-weight: 600;
      font-size: 32px;
+     -webkit-box-shadow: 3px 4px 19px 4px rgba(4,7,5,0.83); 
+     box-shadow: 3px 4px 19px 4px rgba(4,7,5,0.83);
 
     
      @media(min-width:480px) {
