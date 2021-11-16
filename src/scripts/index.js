@@ -9,14 +9,14 @@ import moment from "moment";
 const button=document.querySelector('#button');
 const day = moment().endOf('month').fromNow(); 
 const hours=moment().endOf('day').fromNow();
-const minute= moment().format('mm');
+const minute= moment().endOf('hour').fromNow();
 const second=moment().format('ss');
 
 button.addEventListener('click', e=>
 {   
     document.querySelector('#days').innerHTML = `${ day } `;
     document.querySelector('#hours').innerHTML =`${ hours }`;
-    document.querySelector('#minuts').innerHTML =`${ 60 - minute } minutes`;  
+    document.querySelector('#minuts').innerHTML =`${ minute } `;  
     document.querySelector('#seconds').innerHTML =`${ 60 - second } seconds`;
    
 })
