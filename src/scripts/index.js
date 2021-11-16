@@ -7,17 +7,22 @@ import moment from "moment";
 // \/ All of your javascript should go here \/
 
 const button=document.querySelector('#button');
-const day = moment().endOf('month').fromNow(); 
-const hours=moment().endOf('day').fromNow();
-const minute= moment().endOf('hour').fromNow();
-const second=moment().format('ss');
+const target = moment().endOf('month')
 
 button.addEventListener('click', e=>
-{   
-    document.querySelector('#days').innerHTML = `${ day } `;
-    document.querySelector('#hours').innerHTML =`${ hours }`;
-    document.querySelector('#minuts').innerHTML =`${ minute } `;  
-    document.querySelector('#seconds').innerHTML =`${ 60 - second } seconds`;
-   
-})
+{
+setInterval(function() {
+    let now = moment().format();
+    let diffDuration = moment.duration(target.diff(now));
+    document.querySelector('#days').innerHTML =
+    `${diffDuration.days() } days`;
+    document.querySelector('#hours').innerHTML =
+    `${diffDuration.hours()} hours`;
+    document.querySelector('#minuts').innerHTML =
+    `${diffDuration.minutes()} minutes ` 
+    document.querySelector('#seconds').innerHTML =
+    `${diffDuration.seconds()} seconds` 
+}, 1000)})
+    
+
 
