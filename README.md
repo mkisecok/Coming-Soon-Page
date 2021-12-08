@@ -1,6 +1,7 @@
 
 
 ### Coming Soon Page
+Result-Link: https://mkisecok.github.io/Coming-Soon-Page/
 
 Using the [Boilerplate](./template.md) provided, create a coming soon webpage. The page should show a count down of days, hours, minutes, and seconds. 
 
