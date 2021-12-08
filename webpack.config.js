@@ -8,7 +8,8 @@ const config = {
   entry: './src/scripts/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: path.join('scripts', 'bundle.js')
+    filename: path.join('scripts', 'bundle.js'),
+    publicPath:'/Coming-Soon-Page/'
   },
   module: {
     rules: [
